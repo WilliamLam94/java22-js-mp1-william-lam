@@ -8,3 +8,6 @@ for (let i = 0; i < 5; i++) {
 }
 const div = document.createElement('div');
 console.log(div);
+
+const ol = document.createElement('ol');
+document.body.append(ol);
