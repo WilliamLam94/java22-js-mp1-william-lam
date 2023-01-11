@@ -10,24 +10,28 @@ for (let i = 0; i < 5; i++) {
 //creates a div
 const div = document.createElement('div');
 document.body.append(div);
-div.style.border = '10px solid';
+div.style.border = '1px solid';
 div.style.padding = '10px';
 div.style.display = 'flex';
 div.style.justifyContent = 'space-around';
 
 const numbersArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-//0-9
-const listEl = document.createElement('ul');
-div.append(listEl);
-listEl.style.listStyleType = 'none';
 /** 
  * TODO
 //* set background to purple
 //*make listitem black and white(nthchild)
-//*make innerText black and white
+//*make innerText black and white(nthchild)
 //* make if statment for number 4,8 and sex
 **/
+
+//0-9
+const listEl = document.createElement('ul');
+div.append(listEl);
+listEl.style.listStyleType = 'none';
+listEl.style.backgroundColor = '#a8a8f0';
+listEl.style.padding = '20px';
+
 numbersArr.map((number) => {
 	const listItemEl = document.createElement('li');
 	listItemEl.innerText = number;
@@ -39,6 +43,8 @@ numbersArr.map((number) => {
 const reverseListEl = document.createElement('ul');
 div.append(reverseListEl);
 reverseListEl.style.listStyleType = 'none';
+reverseListEl.style.backgroundColor = '#a8a8f0';
+reverseListEl.style.padding = '20px';
 
 const highToLowNumbersArr = numbersArr.sort((a, b) => b - a);
 console.log(highToLowNumbersArr);
@@ -67,6 +73,8 @@ const arr = [
 const numbersInWordsEl = document.createElement('ul');
 div.append(numbersInWordsEl);
 numbersInWordsEl.style.listStyleType = 'none';
+numbersInWordsEl.style.backgroundColor = '#a8a8f0';
+numbersInWordsEl.style.padding = '20px';
 
 for (const number of arr) {
 	const listItemEl = document.createElement('li');
