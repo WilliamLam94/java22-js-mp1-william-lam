@@ -29,13 +29,17 @@ const numbersArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const listEl = document.createElement('ul');
 div.append(listEl);
 listEl.style.listStyleType = 'none';
+listEl.style.textAlign = 'start';
 listEl.style.backgroundColor = '#a8a8f0';
-listEl.style.padding = '20px';
+listEl.style.padding = '10px';
 
 numbersArr.map((number) => {
 	const listItemEl = document.createElement('li');
 	listItemEl.innerText = number;
+	listItemEl.style.paddingRight = '30px';
 	listEl.append(listItemEl);
+	document.querySelector('li').style.backgroundColor = 'black';
+	document.querySelector('li').style.color = 'white';
 });
 
 //9-0
@@ -43,6 +47,7 @@ numbersArr.map((number) => {
 const reverseListEl = document.createElement('ul');
 div.append(reverseListEl);
 reverseListEl.style.listStyleType = 'none';
+reverseListEl.style.textAlign = 'center';
 reverseListEl.style.backgroundColor = '#a8a8f0';
 reverseListEl.style.padding = '20px';
 
@@ -58,7 +63,7 @@ highToLowNumbersArr.map((number) => {
 // ett-tio
 
 const arr = [
-	'ett ',
+	' ett ',
 	' två ',
 	' tre ',
 	' fyra ',
@@ -73,6 +78,7 @@ const arr = [
 const numbersInWordsEl = document.createElement('ul');
 div.append(numbersInWordsEl);
 numbersInWordsEl.style.listStyleType = 'none';
+numbersInWordsEl.style.textAlign = 'end';
 numbersInWordsEl.style.backgroundColor = '#a8a8f0';
 numbersInWordsEl.style.padding = '20px';
 
