@@ -7,10 +7,42 @@ for (let i = 0; i < 5; i++) {
 	header.style.textAlign = 'center';
 }
 const div = document.createElement('div');
+document.body.append(div);
 console.log(div);
 
-const arrOne = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-for (const list of arrOne) {
+const ol = document.createElement('ol');
+document.body.append(ol);
+
+for (let i = 0; i < 10; i++) {
+	const li = document.createElement('li');
+	ol.append(li);
+	li.innerText = `${i + 0}`;
+	li.style.listStyleType = 'none';
+}
+
+const ul = document.createElement('ul');
+document.body.append(ul);
+
+for (let i = 0; i < 10; i++) {
+	const li = document.createElement('li');
+	ul.append(li);
+	li.innerText = `${9 + i * 0}`;
+	li.style.listStyleType = 'none';
+}
+
+const arr = [
+	'ett ',
+	' två ',
+	' tre ',
+	' fyra ',
+	' fem ',
+	' sex ',
+	' sju ',
+	' åtta ',
+	' nio ',
+	' tio ',
+];
+for (const list of arr) {
 	console.log(list);
 	document.body.append(list);
 }
