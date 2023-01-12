@@ -104,10 +104,5 @@ for (const number of arr) {
 	listItemEl.style.backgroundColor = 'black';
 	listItemEl.style.color = 'white';
 
-	//if (number % 2 == 1) {
-	//	listItemEl.style.backgroundColor = 'white';
-	//	listItemEl.style.color = 'black';
-	//}
-	//number++;
-	//console.log(number);
+	console.log(number);
 }
