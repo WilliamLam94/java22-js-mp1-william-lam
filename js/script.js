@@ -32,15 +32,21 @@ div.append(listEl);
 listEl.style.listStyleType = 'none';
 listEl.style.textAlign = 'start';
 listEl.style.backgroundColor = '#a8a8f0';
-listEl.style.padding = '10px';
+listEl.style.padding = '20px';
 
 numbersArr.map((number) => {
 	const listItemEl = document.createElement('li');
 	listItemEl.innerText = number;
-	listItemEl.style.paddingRight = '30px';
 	listEl.append(listItemEl);
-	document.querySelector('li').style.backgroundColor = 'black';
-	document.querySelector('li').style.color = 'white';
+	listItemEl.style.backgroundColor = 'black';
+	listItemEl.style.color = 'white';
+
+	if (number % 2 == 1) {
+		listItemEl.style.backgroundColor = 'white';
+		listItemEl.style.color = 'black';
+	}
+	number++;
+	console.log(number);
 });
 
 //9-0
@@ -53,12 +59,20 @@ reverseListEl.style.backgroundColor = '#a8a8f0';
 reverseListEl.style.padding = '20px';
 
 const highToLowNumbersArr = numbersArr.sort((a, b) => b - a);
-console.log(highToLowNumbersArr);
 
 highToLowNumbersArr.map((number) => {
 	const reverseListItemEl = document.createElement('li');
 	reverseListItemEl.innerText = number;
 	reverseListEl.append(reverseListItemEl);
+	reverseListItemEl.style.backgroundColor = 'black';
+	reverseListItemEl.style.color = 'white';
+
+	if (number % 2 == 1) {
+		reverseListItemEl.style.backgroundColor = 'white';
+		reverseListItemEl.style.color = 'black';
+	}
+	number++;
+	console.log(number);
 });
 
 // ett-tio
@@ -87,5 +101,13 @@ for (const number of arr) {
 	const listItemEl = document.createElement('li');
 	listItemEl.innerText = number;
 	numbersInWordsEl.append(listItemEl);
-	console.log(number);
+	listItemEl.style.backgroundColor = 'black';
+	listItemEl.style.color = 'white';
+
+	//if (number % 2 == 1) {
+	//	listItemEl.style.backgroundColor = 'white';
+	//	listItemEl.style.color = 'black';
+	//}
+	//number++;
+	//console.log(number);
 }
