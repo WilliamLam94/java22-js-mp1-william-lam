@@ -5,6 +5,7 @@ for (let i = 0; i < 5; i++) {
 	header.style.backgroundColor = `hsl(${120 + i * 20},90%,85%)`;
 	header.style.fontSize = `${16 + i * 2}px`;
 	header.style.textAlign = 'center';
+	header.style.color = '#6e6ef7';
 }
 
 //creates a div
